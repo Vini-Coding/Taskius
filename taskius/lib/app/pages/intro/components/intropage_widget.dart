@@ -13,7 +13,7 @@ PageViewModel introPageWidget({
       padding: const EdgeInsets.only(top: 100),
       child: Text(
         title,
-        style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 93, 0, 255)),
       ),
     ),
     body: body,
