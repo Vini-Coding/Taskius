@@ -4,8 +4,8 @@ class MyPageTemplate extends StatelessWidget {
   const MyPageTemplate(
       {required this.expandedChild1,
       required this.expandedChild2,
-      required this.flexExpanded1,
-      required this.flexExpanded2,
+      this.flexExpanded1 = 2,
+      this.flexExpanded2 = 2,
       Key? key})
       : super(key: key);
   final Widget expandedChild1;
@@ -36,14 +36,14 @@ class MyPageTemplate extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
-            flex: 2,
+            flex: flexExpanded1,
             child: Padding(
               padding: const EdgeInsets.only(bottom: 40),
               child: expandedChild1,
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: flexExpanded2,
             child: Container(
               width: double.infinity,
               decoration: const BoxDecoration(

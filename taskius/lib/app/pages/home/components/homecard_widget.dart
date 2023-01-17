@@ -2,7 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class HomeCardWidget extends StatelessWidget {
-    HomeCardWidget(
+    const HomeCardWidget(
       {required this.title,
       required this.subtitle,
       required this.imagePath,
@@ -57,11 +57,13 @@ class HomeCardWidget extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Tab(
-                          icon: Image.asset(
-                            imagePath,
+                        Expanded(
+                          child: Tab(
+                            icon: Image.asset(
+                              imagePath,
+                            ),
+                            height: 75,
                           ),
-                          height: 75,
                         ),
                         const SizedBox(
                           height: 10,
