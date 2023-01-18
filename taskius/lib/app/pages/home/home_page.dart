@@ -28,16 +28,14 @@ class _HomePageState extends State<HomePage> {
           floatingActionButton: Container(
             height: 100,
             width: 100,
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(7),
             child: FloatingActionButton(
               onPressed: () {},
               backgroundColor: const Color.fromARGB(255, 55, 0, 150),
               elevation: 4,
-              child: const Icon(
-                Icons.add_task_rounded,
-                color: Colors.white,
-                size: 30,
-              ),
+              child: Tab(
+              icon: Image.asset('assets/icons/add_task_list.png'),
+            ),
             ),
           ),
           body: SafeArea(

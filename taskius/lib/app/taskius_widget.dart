@@ -20,10 +20,6 @@ class TaskiusWidget extends StatelessWidget {
         AlarmClockToolPage.routeName: (context) => const AlarmClockToolPage(),
       },
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        //TODO: Learn about themes later
-        //primarySwatch: Colors.indigo,
-      ),
     );
   }
 }
